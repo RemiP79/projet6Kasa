@@ -1,0 +1,41 @@
+#header {
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    padding : 20px 6.5%;
+}
+
+#logoKasaRouge {    
+    width : 14%;
+    min-width: 120px;
+}
+
+#nav{
+    width : 50%;
+    text-decoration:none;
+}
+
+#navUl{
+    list-style-type : none;    
+    display : flex;
+    justify-content: right;
+    margin : 0;
+    padding:0; 
+    width : 100%;
+    
+   
+}
+
+.navLi{
+    font-size :130%;     
+    font-family : "arial";
+    color:#ff6060;    
+    margin-left :10%;
+    cursor : "pointer";
+    
+    
+}
+
+.navLi:hover{
+    text-decoration: underline;     
+}
