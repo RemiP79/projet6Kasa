@@ -10,8 +10,8 @@ function Banner() {
         <img id="logoKasaRouge" src={Logo} alt="Logo Kasa" />        
         <NavLink id="nav">
             <ul id="navUl">
-                <Link to= "/"class="navLi">Accueil</Link>
-                <Link to= "/about"class="navLi">A Propos</Link>
+                <Link to= "/"className="navLi">Accueil</Link>
+                <Link to= "/about"className="navLi">A Propos</Link>
             </ul>
         </NavLink>
 

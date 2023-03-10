@@ -1,0 +1,8 @@
+.divCardsContent{
+   display : flex;
+   flex-wrap: wrap;
+    margin: 30px 6.5%;
+    background-color: rgb(246,246,246);
+    border-radius : 30px;
+    padding : 2%;
+}

@@ -1,25 +1,23 @@
 import React from "react";
-import DataJson from "../data/Data.json";
 import { Link } from 'react-router-dom';
+import './styles/homeCards.css'
 
 
 
-function HomeCards() {
-    const id = "item.id";
-    return (        
-            <div className="cards">
-                {DataJson.map((item)=> (
-                    
-                    <Link to="/description/{id}">
-                    <div className="CardsImg" key= '${item}-${index}'>
-                            <img src={item.pictures[0]} alt={item.title} key= 'img-${item}-${index}'/>                        
-                            <p className="CardsTitle" key= 'title-${item}-${index}'>{item.title} </p> 
-                    </div>
-                    </Link>
-                    
-                                 
-                ))}   
-            </div>             
+function HomeCards({card}) {    
+    
+    return (  
+        <div className="cardsContent">       
+        <Link to= {'description/' + card.id}> 
+            
+                <div className="cards">
+                                <img src={card.cover} alt={card.title} className ="cardsImg"/>                        
+                </div>  
+                <p className="cardsTitle" >{card.title}</p> 
+            
+        </Link> 
+        </div>
+        
     )
 }
 

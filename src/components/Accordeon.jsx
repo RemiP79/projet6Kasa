@@ -1,11 +1,11 @@
 import React from 'react';
-import { useState, Image } from 'react';
-import DataAbout from '../data/DataAbout.json';
+import { useState } from 'react';
+
 import "./styles/accordeonAbout.css"
 import FlecheOuverture from  '../assets/img/flecheOuvertureAccordeon.png';
 import FlecheFermeture from  '../assets/img/flecheFermetureAccordeon.png';
 
-function Accordeon() {
+function Accordeon({item},i) {
     const [selected, setSelected]  = useState(null);
     const toggle = (i) => {
         if (selected ===i) {
@@ -13,22 +13,19 @@ function Accordeon() {
         }
         setSelected(i)
     }
-
-
     return (
         <div className="wrapper">
-            <div className="accordeon">
-                {DataAbout.map((item, i)=> (
+            <div className="accordeon">                
                     <div className="AccordeonItem">
                         <div className="AccordeonTitle" onClick={() => toggle(i)}>
-                            <h2 key={'${item.id}-${item.index}'}>{item.title}</h2>
-                            <span className="iconeAccordeon">{selected === i? '-' : '+'}</span>
+                            <h2 >{item.title}</h2>
+                            <span className="iconeAccordeon">{selected? <img src={FlecheFermeture} alt="Fermer"/> : <img src={FlecheOuverture} alt="Ouvrir"/>}</span>
                         </div>
-                        <div className={selected === i? 'accordeonContent show' : 
-                        'accordeonContent'} key={'${item.id}-${item.index}'}>{item.content}
+                        <div className={selected? 'accordeonContent show' : 
+                        'accordeonContent'}>{item.content}
                         </div> 
                     </div>                         
-                ))}   
+                 
             </div>
 
         </div>       
