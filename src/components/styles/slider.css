@@ -1,13 +1,10 @@
 
 
-  
-
-
-
   .slide {
-    width: 100%;   
+    width: 87%;   
     height: 300px;
     position: absolute;
+    margin : 0 6.5%;
     
     transition: all 0.5s;
   }
@@ -17,6 +14,7 @@
     height: 100%;
     position : absolute;
     object-fit: cover;
+    border-radius : 10px
   }
   .btn {
     display : flex;
@@ -29,7 +27,7 @@
     border: none;    
     z-index: 10px;
     cursor: pointer;
-    background-color: green;
+   
     opacity : 0.5;
     font-size: 5em; 
     
@@ -37,15 +35,46 @@
 
 
   .btn:active {
-    transform: scale(1.1);
+    transform: scale(1);
   }
   
   .btn-prev {
-    left : 0;
-    
+   top : 0;   
+   left :0;
   }
   
-  .btn-next {
+  .btn-next {    
+  right: 0;    
+  top : 0
+  }
+
+  .btn img{
+    width : 60px;
+   height : 60px;
     
-    right: 0;
+  }
+
+  .arrowNext{
+    position: relative;
+    right : 10%;
+   
+  }
+
+  .arrowPrev{
+    position: relative;
+    left : 10%;
+  }
+  .decompteImg {
+      position : absolute;
+      bottom : 5%;
+      font-size : 50px;
+      margin : 0 auto;
+      left : 50%;
+      color : white;
+      font-size : 1.2em;
+      font-family : "arial";
+      
+    
+    
+    transform: translate(-50%,-50%);
   }
