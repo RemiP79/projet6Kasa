@@ -1,4 +1,4 @@
-.homeBanner{
+.aboutBanner{
     /*border : 2px solid green;*/
     height : 170px;
     margin-bottom : 50px;
@@ -7,7 +7,7 @@
     
 }
 
-.homeBanner img{
+.aboutBanner img{
     /*border : 2px solid blue;*/
     height : 100%;
     width : 100%;
@@ -17,18 +17,3 @@
 
 }
 
-
-
-.homeBanner p{
-    
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    /*border : 2px solid pink;*/
-    font-family : arial;
-    color : white;
-    font-size : 2rem;
-    margin:0;
-    
-}

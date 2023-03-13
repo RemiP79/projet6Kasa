@@ -5,29 +5,35 @@
     align-items: center;
     margin-top : 20px;
 }
-
 .accordeon{
-    width : 80%;
+    width : 70%;
 }
-
 .iconeAccordeon{
     font-size : 1.5em;
 }
-
 .AccordeonItem{
-    background-color: pink;
+    background-color: rgb(255, 100, 100);
     margin-bottom: 10px;
-    padding : 10px 20px;
+    
+    border-radius : 10px;
 }
 .AccordeonTitle{
     display : flex;
     justify-content: space-between;
     align-items: center;
+    color : white;
+    font-family : arial;
+    font-size : 1.1em;
+    font-weight :inherit;
+    padding : 0 10px;
+    height : 35px;
+    
 }
 
 .accordeonContent {
     overflow: hidden;
     max-height : 0;
+    background-color: rgb(246,246,246);
     transition : all 0.5s cubic-bezier(0,1,0,1);
 }
 
@@ -35,4 +41,7 @@
     height : auto;
     max-height : 100px;
     transition : all 0.5s cubic-bezier(1,0,1,0);
+    color : rgb(255, 100, 100);
+    padding : 20px 10px 10px;
+    font-size : 1.2em;
 }

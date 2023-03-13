@@ -4,9 +4,12 @@ import Banner from "../components/HomeBanner";
 import HomeCards from '../components/HomeCards';
 import DataJson from "../data/Data.json";
 import '../components/styles/home.css';
+import { useParams } from 'react-router-dom';
+
 
 
 function Home () {
+  
   return (
     <div>      
       <Banner/>
@@ -15,7 +18,7 @@ function Home () {
                     <HomeCards                  
                           key={card.id}
                           card={card}
-                      />
+                      />                      
                   ))}
      </div>
     </div>

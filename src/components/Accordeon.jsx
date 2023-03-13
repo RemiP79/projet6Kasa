@@ -18,7 +18,7 @@ function Accordeon({item},i) {
             <div className="accordeon">                
                     <div className="AccordeonItem">
                         <div className="AccordeonTitle" onClick={() => toggle(i)}>
-                            <h2 >{item.title}</h2>
+                            <p >{item.title}</p>
                             <span className="iconeAccordeon">{selected? <img src={FlecheFermeture} alt="Fermer"/> : <img src={FlecheOuverture} alt="Ouvrir"/>}</span>
                         </div>
                         <div className={selected? 'accordeonContent show' : 
