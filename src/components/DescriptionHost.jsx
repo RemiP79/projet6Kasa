@@ -8,7 +8,7 @@ function Tags({item}) {
     if(item.id===id){        
     return (  
         
-            <div className="location">                              
+            <div className="host">                              
                 <span >{item.host.name}</span> 
                 <span><img src = {item.host.picture} alt = {item.host.name} /> </span>               
             </div>   

@@ -1,6 +1,6 @@
 .cardsContent{
-    width : 300px;
-    max-height : 250px;
+    width : 350px;
+    max-height : 350px;
     
     margin: 20px auto;
     background: linear-gradient(rgb(255, 100, 100), rgb(150, 121, 121));
@@ -25,7 +25,7 @@
     font-family : arial;
     color : white;
     text-decoration:none;
-    font-size : 90%;
+    font-size : 100%;
     margin-top : 30px;
     margin-left : 20px;
     height : 30%;

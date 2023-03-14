@@ -9,17 +9,18 @@ import Tags from '../components/DescriptionTags.jsx'
 import Host from '../components/DescriptionHost.jsx'
 import Rating from '../components/DescriptionRating.jsx'
 import '../components/styles/Description.css'
-import Accordeon from "../components/Accordeon";
+import AccordeonDescr from "../components/DescriptionAccordeonDescr.jsx";
+import AccordeonEquip from "../components/DescriptionAccordeonEquip.jsx";
 
 
 
 function DescriptionPage({item}) {
-    const { id } = useParams();    
+    const { id } = useParams();
+    
     return (
      <div>
       <div>
-          <h2>Now showing post {id}</h2>
-          <h2>Now showing post {}</h2>
+          
       </div>
         
       <div id="carousel">
@@ -90,7 +91,7 @@ function DescriptionPage({item}) {
 
     {DataJson.map((item) =>(
     
-        <Accordeon 
+        <AccordeonDescr 
           key={item.id}
           item={item}
         />
@@ -104,6 +105,24 @@ function DescriptionPage({item}) {
 
     </div>
 
+    <div>
+    
+
+    {DataJson.map((item) =>(
+    
+        <AccordeonEquip 
+          key={item.id}
+          item={item}
+        />
+      ))}
+    
+
+
+
+
+
+
+    </div>
 
 
 

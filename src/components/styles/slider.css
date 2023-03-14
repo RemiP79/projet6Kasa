@@ -2,8 +2,8 @@
 
   .slide {
     width: 87%;   
-    height: 300px;
-    position: absolute;
+    height: 400px;
+    position: relative;
     margin : 0 6.5%;
     
     transition: all 0.5s;

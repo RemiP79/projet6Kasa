@@ -2,6 +2,7 @@ import React from "react";
 import './styles/slider.css';
 import DataJson from '../data/Data.json';
 import { useParams } from 'react-router-dom';
+import "./styles/DescriptionLocation.css"
 
 function Location({item}) {
     const { id } = useParams();   

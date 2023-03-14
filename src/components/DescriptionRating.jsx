@@ -8,7 +8,7 @@ function Rating({item}) {
     if(item.id===id){        
     return (  
         
-            <div className="location">                              
+            <div className="rating">                              
                 <span >{item.rating}</span> 
                               
             </div>   
