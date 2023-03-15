@@ -1,3 +1,15 @@
-.location{
-    color :rgb(255, 100, 100);
+
+
+.tableauTags{
+display : flex;
+flex-wrap: wrap;
+}
+
+.ligneTablTags{
+    margin : 0 10px 10px 0;
+    padding:5px 35px;
+    background-color: rgb(255, 100, 100);
+    border-radius: 10px;
+    font-size : 0.9em;
+    color : white;   
 }

@@ -1,7 +1,8 @@
 import React from "react";
-import './styles/slider.css';
+import './styles/DescriptionHost.css';
 import DataJson from '../data/Data.json';
 import { useParams } from 'react-router-dom';
+
 
 function Tags({item}) {
     const { id } = useParams();   
@@ -9,8 +10,8 @@ function Tags({item}) {
     return (  
         
             <div className="host">                              
-                <span >{item.host.name}</span> 
-                <span><img src = {item.host.picture} alt = {item.host.name} /> </span>               
+                <div className="hostName">{item.host.name}</div> 
+                <div className="divHostImg"><img src = {item.host.picture} alt = {item.host.name} className="hostImg"/> </div>               
             </div>   
     
    )

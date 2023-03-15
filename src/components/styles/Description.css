@@ -6,3 +6,47 @@
 /*.marginTop{
     margin-top : 450px;
 }*/
+
+.tagsDescription{
+    display : flex;
+    flex-direction: row;
+   
+}
+
+.blocTitleHost{
+    display : flex;
+    justify-content : space-between;
+    margin : 20px 6.5%;
+}
+
+.blocTitle{
+    margin : 0;
+    padding :0;
+   
+}
+.title{
+    margin:10px 0 0 0;
+}
+
+.blocHost{
+    margin : 0; 
+   
+}
+
+.blocHostHost, .blocHostRating{
+    text-align: right;
+}
+
+.divAccordeon{
+    display:flex;
+    
+    margin : 0 6.5%;
+}
+
+.DescriptionAccordeonDescription {
+    width : 80%;
+}
+
+.EquipementAccordeonDescription{
+width : 80%;
+}

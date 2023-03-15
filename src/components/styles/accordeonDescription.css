@@ -1,23 +1,28 @@
-.wrapper{
+.wrapperDescription{
     display:flex;
     width : 100%;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     margin-top : 20px;
 }
-.accordeon{
-    width : 70%;
+.accordeonDescription{
+    width : 100%;
 }
-.iconeAccordeon{
+.iconeAccordeonDescription{
     font-size : 1.5em;
 }
-.AccordeonItem{
+
+.alignLeft{
+    display: flex;
+    justify-content: left;
+}
+.AccordeonItemDescription{
     background-color: rgb(255, 100, 100);
     margin-bottom: 10px;
-    
+    width : 90%;
     border-radius : 10px;
 }
-.AccordeonTitle{
+.AccordeonTitleDescription{
     display : flex;
     justify-content: space-between;
     align-items: center;
@@ -30,18 +35,18 @@
     
 }
 
-.accordeonContent {
+.accordeonContentDescription {
     overflow: hidden;
     max-height : 0;
     background-color: rgb(246,246,246);
-    transition : all 0.5s cubic-bezier(0,1,0,1);
+    transition : all  cubic-bezier(0,1,0,1);
 }
 
-.accordeonContent.show {
+.accordeonContentDescription.showDescription {
     height : auto;
     max-height : 100px;
-    transition : all  cubic-bezier(1,0,1,0);
+    transition : all 0.1s cubic-bezier(1,0,1,0);
     color : rgb(255, 100, 100);
     padding : 20px 10px 10px;
-    font-size : 1.2em;
+    font-size : 1em;
 }

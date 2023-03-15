@@ -1,0 +1,21 @@
+.host{
+    display: flex;
+    justify-content : right;
+}
+
+.hostName{
+    color : rgb(255, 100, 100);
+    font-family : "arial";
+    font-size : 110%;
+    margin : 10px 0 0 0;
+    width : 40%;
+    padding-right : 5%;
+}
+
+.divHostImg{
+    width : 40%;
+}
+.hostImg{   
+    border-radius : 100px;
+    width : 60px;
+}

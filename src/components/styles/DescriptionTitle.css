@@ -1,8 +1,14 @@
 h1{
     font-weight : normal;
+    margin-top : 0;
 }
 .Title{
-    font-size : 1.5em;
+    font-size : 100%;
     font-family : "arial";
     color : rgb(255, 100, 100); 
+    
+    
+}
+.Title h1{
+    margin-bottom: 10px;
 }
