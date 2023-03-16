@@ -8,12 +8,12 @@ import { Link } from 'react-router-dom';
 function Banner() {
     return (<header id="header">
         <img id="logoKasaRouge" src={Logo} alt="Logo Kasa" />        
-        <NavLink id="nav">
+        
             <ul id="navUl">
                 <Link to= "/"className="navLi">Accueil</Link>
                 <Link to= "/about"className="navLi">A Propos</Link>
             </ul>
-        </NavLink>
+        
 
     </header>
     )

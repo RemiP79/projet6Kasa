@@ -9,53 +9,43 @@ import Tags from '../components/DescriptionTags.jsx'
 import Host from '../components/DescriptionHost.jsx'
 import Rating from '../components/DescriptionRating.jsx'
 import '../components/styles/Description.css'
-import AccordeonDescr from "../components/DescriptionAccordeonDescr.jsx";
+import Accordeon from "../components/Accordeon.jsx";
 import AccordeonEquip from "../components/DescriptionAccordeonEquip.jsx";
+import { Navigate } from 'react-router-dom';
 
 
 
-function DescriptionPage({item}) {
-    const { id } = useParams();    
+function DescriptionPage({item}, index) {
+    const { id } = useParams(); 
+    
+    const datajson = DataJson.find(location=>location.id===id);
+    if(datajson===undefined){
+      return <Navigate to="/*"/>
+    }
     return (
-<div>
-    <div id="carousel">
-              {DataJson.map((item) => ( 
-                      <Slider 
-                        key={item.id}                         
-                        item={item}
-                              />
-                  )
-                  )}             
-    </div>
+    
+<>
+     <Slider  pictures={datajson.pictures} />
+                             
+                              
+    
 
-    <div className="blocTitleHost"> 
+    
       <div className="blocTitle">
           <div className="title">
-            {DataJson.map((item) => ( 
-                                    <Title 
-                                      key={item.id}                         
-                                      item={item}
-                                            />
-            ))
-            }
-          </div>
+            <Title title={datajson.title}/>
+            
+         
           <div className="">
-            {DataJson.map((item) => ( 
-                                    <Location 
-                                      key={item.id}                         
-                                      item={item}
-                                            />
-              ))
-            }
+          <Location location={datajson.location}/>
+              
+            
           </div>            
           <div className="tagsDescription">                
-            {DataJson.map((item) => ( 
-                                    <Tags 
-                                      key={item.id}                         
-                                      item={item}
-                                            />
-              ))
-            }
+            {datajson.tags.map((tag,index)=> {
+              return <Tags value={tag} key={index}/>
+            })}                       
+            
           </div>
       </div>
       <div className="blocHost">
@@ -69,38 +59,27 @@ function DescriptionPage({item}) {
               }
         </div>            
         <div className="blocHostRating">              
-              {DataJson.map((item) => ( 
+              
                                   <Rating 
-                                    key={item.id}                         
-                                    item={item}
+                                                         
+                                    rating={datajson.rating}
                                           />                               
-                ))
-              }
+              
                   
         </div>
       </div>      
     </div>
     <div className="divAccordeon">
         <div className="DescriptionAccordeonDescription">
-          {DataJson.map((item) =>(    
-                    <AccordeonDescr 
-                      key={item.id}
-                      item={item}
-                    />
-            ))}    
+          <Accordeon key={index} item={{title:"Description", reply: datajson.description}}/>
         </div>
+
         <div className="EquipementAccordeonDescription">
-          {DataJson.map((item) =>(
-          
-              <AccordeonEquip 
-                key={item.id}
-                item={item}
-              />
-            ))}    
+          <Accordeon key={index} item={{title:"Equipements", reply: datajson.equipments}}/>
         </div>
     </div>
 
-</div>
+</>
     
     );
    }

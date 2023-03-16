@@ -4,17 +4,16 @@ import DataJson from '../data/Data.json';
 import { useParams } from 'react-router-dom';
 import "./styles/DescriptionLocation.css"
 
-function Location({item}) {
-    const { id } = useParams();   
-    if(item.id===id){        
+function Location({location}) {
+         
     return (  
         
             <div className="location">                              
-                <span >{item.location}</span>                
+                <span >{location}</span>                
             </div>   
     
    )
     
     }
-}
+
 export default Location

@@ -4,22 +4,10 @@ import DataJson from '../data/Data.json';
 import { useParams } from 'react-router-dom';
 import "./styles/DescriptionTags.css"
 
-function Tags({item}) {
-    const { id } = useParams();  
-    
-    if(item.id===id){ 
+function Tags({tag}) {
         
-        let tableau=[];
-        for(let tabl of item.tags){
-            tableau.push(<div className="ligneTablTags">{tabl}</div>)
-        }    
-       
         return (        
-            <tr className="tableauTags">{tableau}</tr>     
-    
+            <div className="tag">{tag}</div>
    )
-        
-    
-    }
 }
 export default Tags
