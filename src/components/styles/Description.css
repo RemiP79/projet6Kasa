@@ -7,11 +7,7 @@
     margin-top : 450px;
 }*/
 
-.tagsDescription{
-    display : flex;
-    flex-direction: row;
-   
-}
+
 
 .blocTitleHost{
     display : flex;
@@ -28,6 +24,16 @@
     margin:10px 0 0 0;
 }
 
+.tag{
+    margin : 0 10px 10px 0;
+    padding:5px 35px;
+    background-color: rgb(255, 100, 100);
+    border-radius: 10px;
+    font-size : 0.9em;
+    color : white;  
+    
+    }
+
 .blocHost{
     margin : 0; 
    
@@ -39,14 +45,22 @@
 
 .divAccordeon{
     display:flex;
+    justify-content: space-between;
     
-    margin : 0 6.5%;
+    flex-basis : auto;
+    margin:0 6.5%; 
+    
+    
+   
+    
 }
 
-.DescriptionAccordeonDescription {
-    width : 80%;
-}
+.DescriptionAccordeonDescription, .EquipementAccordeonDescription {
+    width : 45%;
+  }
 
-.EquipementAccordeonDescription{
-width : 80%;
-}
+  .liAccordeon{
+    list-style-type:none
+  }
+
+   

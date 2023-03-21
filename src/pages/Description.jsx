@@ -15,7 +15,7 @@ import { Navigate } from 'react-router-dom';
 
 
 
-function DescriptionPage({item}, index) {
+function DescriptionPage({item}, index, props) {
     const { id } = useParams(); 
     
     const datajson = DataJson.find(location=>location.id===id);
@@ -23,62 +23,29 @@ function DescriptionPage({item}, index) {
       return <Navigate to="/*"/>
     }
     return (
-    
 <>
      <Slider  pictures={datajson.pictures} />
-                             
-                              
-    
-
-    
-      <div className="blocTitle">
-          <div className="title">
-            <Title title={datajson.title}/>
-            
-         
-          <div className="">
+      <div className="blocTitleHost">
+        <div className="blocTitle">
+          <Title title={datajson.title}/>
           <Location location={datajson.location}/>
-              
-            
-          </div>            
-          <div className="tagsDescription">                
-            {datajson.tags.map((tag,index)=> {
-              return <Tags value={tag} key={index}/>
-            })}                       
-            
-          </div>
-      </div>
-      <div className="blocHost">
-        <div className="blocHostHost">              
-              {DataJson.map((item) => ( 
-                                  <Host 
-                                    key={item.id}                         
-                                    item={item}
-                                          />
-                ))
-              }
-        </div>            
-        <div className="blocHostRating">              
-              
-                                  <Rating 
-                                                         
-                                    rating={datajson.rating}
-                                          />                               
-              
-                  
+          <Tags tag={{value:datajson.tags.map((tag,index)=><div key={index} className="tag">{tag}</div>)}} />
         </div>
-      </div>      
-    </div>
+        <div className="blocHost">
+          <Host props={{name:datajson.host.name, picture:datajson.host.picture}}/>
+          <Rating rating={datajson.rating}/> 
+        </div>    
+      </div>  
+    
     <div className="divAccordeon">
-        <div className="DescriptionAccordeonDescription">
-          <Accordeon key={index} item={{title:"Description", reply: datajson.description}}/>
-        </div>
-
-        <div className="EquipementAccordeonDescription">
-          <Accordeon key={index} item={{title:"Equipements", reply: datajson.equipments}}/>
-        </div>
+      <div className="DescriptionAccordeonDescription">
+        <Accordeon key={index} props={{title:"Description", content:datajson.description}}/>
+      </div>
+      <div className="EquipementAccordeonDescription">
+        <Accordeon props={{title:"Equipements", content:datajson.equipments.map((contenu,indexEquip)=> <li className="liAccordeon" key={indexEquip}>{contenu}</li>)}}/>
+      </div>
     </div>
-
+                                                                      
 </>
     
     );

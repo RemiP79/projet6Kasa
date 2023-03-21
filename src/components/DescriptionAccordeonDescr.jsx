@@ -6,17 +6,12 @@ import FlecheOuverture from  '../assets/img/flecheOuvertureAccordeon.png';
 import FlecheFermeture from  '../assets/img/flecheFermetureAccordeon.png';
 
 
-function Accordeon({item},i) {
+function Accordeon(props) {
    
-    const { id } = useParams(); 
-    const [selected, setSelected]  = useState(null);
-    if(item.id===id){   
     
-    const toggle = (i) => {
-        if (selected ===i) {
-            return setSelected(null);
-        }
-        setSelected(i)
+    const [selected, setSelected]  = useState(false);
+    const toggle = () => {
+        setSelected(!selected)
     }
     
 
@@ -25,12 +20,12 @@ function Accordeon({item},i) {
         <div className="wrapperDescription alignLeft">
                             
                     <div className="AccordeonItemDescription">
-                        <div className="AccordeonTitleDescription" onClick={() => toggle(i)}>
+                        <div className="AccordeonTitleDescription" onClick={() => toggle()}>
                             <p >Description</p>
                             <span className="iconeAccordeonDescription">{selected? <img src={FlecheFermeture} alt="Fermer"/> : <img src={FlecheOuverture} alt="Ouvrir"/>}</span>
                         </div>
                         <div className={selected? 'accordeonContentDescription showDescription' : 
-                        'accordeonContentDescription'}>{item.description}
+                        'accordeonContentDescription'}>{props.description}
                         </div> 
                     </div>                         
                  
@@ -39,5 +34,5 @@ function Accordeon({item},i) {
         </div>       
     )
     }
-}
+
 export default Accordeon

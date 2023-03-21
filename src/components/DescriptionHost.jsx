@@ -4,18 +4,17 @@ import DataJson from '../data/Data.json';
 import { useParams } from 'react-router-dom';
 
 
-function Tags({item}) {
-    const { id } = useParams();   
-    if(item.id===id){        
+function Host({props}) {
+         
     return (  
         
             <div className="host">                              
-                <div className="hostName">{item.host.name}</div> 
-                <div className="divHostImg"><img src = {item.host.picture} alt = {item.host.name} className="hostImg"/> </div>               
+                <div className="hostName">{props.name}</div> 
+                <div className="divHostImg"><img src = {props.picture} alt = {props.name} className="hostImg"/> </div>               
             </div>   
     
    )
     
     }
-}
-export default Tags
+
+export default Host

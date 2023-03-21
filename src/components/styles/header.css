@@ -10,9 +10,21 @@
     min-width: 120px;
 }
 
-#nav{
+.nav-active{
+    text-decoration: underline;
+}
+
+.nav-link{
+    color : #ff6060;
     width : 50%;
-    text-decoration:none;
+    margin-left :10%;
+    cursor : "pointer";
+    font-size :130%;
+    font-family : "arial";
+}
+.navbar{
+    width : 50%;
+    text-align: right;
 }
 
 #navUl{
@@ -26,16 +38,5 @@
    
 }
 
-.navLi{
-    font-size :130%;     
-    font-family : "arial";
-    color:#ff6060;    
-    margin-left :10%;
-    cursor : "pointer";
-    
-    
-}
 
-.navLi:hover{
-    text-decoration: underline;     
-}
+

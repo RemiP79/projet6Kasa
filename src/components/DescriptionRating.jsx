@@ -6,10 +6,6 @@ import starFull from '../assets/img/starFull.png'
 import starEmpty from '../assets/img/starEmpty.png'
 
 function Rating({rating}) {
-           
-        
-            
-
         return (
 <div className="divBlocRating">
     {rating==0 && <div className="divRating"><img src = {starEmpty} alt="etoile" className="Etoile"/><img src = {starEmpty} alt="etoile"/><img src = {starEmpty} alt="etoile"/><img src = {starEmpty} alt="etoile"/><img src = {starEmpty} alt="etoile"/></div>}

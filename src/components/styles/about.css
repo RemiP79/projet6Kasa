@@ -1,0 +1,12 @@
+.wrapper{
+    display:flex;
+    flex-direction: column;   
+    justify-content: center;
+    align-items: center;    
+    padding : 0 6.5%;
+}
+
+.accordeon{
+    width : 80%;    
+    
+}
