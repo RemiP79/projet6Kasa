@@ -39,4 +39,25 @@
 }
 
 
+@media all and (max-width: 600px) {
+    #header {
+        margin : 20px 4% 35px;
+    }
+
+    #logoKasaRouge {    
+    width : 25%;
+    min-width:auto;   
+    }
+
+
+    .nav-link{    
+    width : 50%;    
+    cursor : "pointer";
+    font-size :100%;
+    font-family : "arial";
+}
+
+}
+
+
 

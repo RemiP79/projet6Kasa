@@ -1,15 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Banner from "../components/HomeBanner";
 import HomeCards from '../components/HomeCards';
 import DataJson from "../data/Data.json";
 import '../components/styles/home.css';
-import { useParams } from 'react-router-dom';
-
-
 
 function Home () {
-  
   return (
     <div>      
       <Banner/>

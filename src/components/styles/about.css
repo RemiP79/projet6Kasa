@@ -7,6 +7,14 @@
 }
 
 .accordeon{
-    width : 80%;    
-    
+    width : 80%;      
+}
+
+@media all and (max-width: 600px){
+    .wrapper{          
+        padding : 0 4%;
+    }    
+    .accordeon{
+        width : 100%;         
+    }
 }

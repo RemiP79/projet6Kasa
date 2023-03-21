@@ -35,4 +35,3 @@ function Accordeon(props) {
     )
     }
 
-export default Accordeon

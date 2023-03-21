@@ -4,7 +4,7 @@ import "./styles/aboutBanner.css";
 
 function AboutBanner() {
     return (
-        <div class="aboutBanner">
+        <div className="aboutBanner">
             <img src={Image} alt="Image A propos" />
         </div>
     )

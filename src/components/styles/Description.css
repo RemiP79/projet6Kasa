@@ -63,4 +63,32 @@
     list-style-type:none
   }
 
+
+
+  @media all and (max-width: 600px){
+    .blocTitleHost{
+        display : flex;
+        flex-direction: column;
+        
+        margin : 20px 4%;
+    }
+
+    .blocHost{
+        display:flex;
+        flex-direction: row-reverse; 
+        justify-content: space-between;
+       
+    }
+    .divAccordeon{
+        display:flex;
+        flex-direction: column;        
+        flex-basis : auto;
+        margin:0 4%; 
+    }
+
+    .DescriptionAccordeonDescription, .EquipementAccordeonDescription {
+        width : 100%;
+      }
+  }
+
    

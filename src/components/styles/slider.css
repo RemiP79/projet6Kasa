@@ -72,9 +72,6 @@
       left : 50%;
       color : white;
       font-size : 1.2em;
-      font-family : "arial";
-      
-    
-    
-    transform: translate(-50%,-50%);
+      font-family : "arial";    
+      transform: translate(-50%,-50%);
   }

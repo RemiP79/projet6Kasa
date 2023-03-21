@@ -48,4 +48,3 @@ function Accordeon({item},i) {
     )
     }
 }
-export default Accordeon

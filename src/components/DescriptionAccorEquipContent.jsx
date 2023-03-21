@@ -19,5 +19,5 @@ function equip({item}) {
 
 
 
-export default equip
+
     

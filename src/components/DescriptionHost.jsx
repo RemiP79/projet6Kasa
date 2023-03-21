@@ -1,20 +1,12 @@
 import React from "react";
 import './styles/DescriptionHost.css';
-import DataJson from '../data/Data.json';
-import { useParams } from 'react-router-dom';
 
-
-function Host({props}) {
-         
-    return (  
-        
-            <div className="host">                              
-                <div className="hostName">{props.name}</div> 
-                <div className="divHostImg"><img src = {props.picture} alt = {props.name} className="hostImg"/> </div>               
-            </div>   
-    
-   )
-    
-    }
-
+function Host({props}) {         
+    return (          
+        <div className="host">                              
+            <div className="hostName">{props.name}</div> 
+            <div className="divHostImg"><img src = {props.picture} alt = {props.name} className="hostImg"/> </div>               
+        </div>     
+   )    
+}
 export default Host

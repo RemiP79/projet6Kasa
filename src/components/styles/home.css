@@ -6,3 +6,16 @@
     border-radius : 30px;
     padding : 2%;
 }
+
+@media all and (max-width: 600px){
+    .divCardsContent{
+        
+    margin: 30px 4%;
+    background-color:white;
+    
+    padding : 0;
+    }
+}
+
+
+

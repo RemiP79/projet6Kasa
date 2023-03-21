@@ -17,3 +17,18 @@
 
 }
 
+@media all and (max-width: 600px) {
+
+    .aboutBanner{
+        /*border : 2px solid green;*/
+        height : 300px;  
+        height : auto;        
+        margin : 0 4%;
+        
+    }
+
+    .aboutBanner img{             
+        border-radius : 10px; 
+    }
+}
+
