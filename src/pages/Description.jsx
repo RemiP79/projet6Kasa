@@ -9,8 +9,6 @@ import Tags from '../components/DescriptionTags.jsx'
 import Host from '../components/DescriptionHost.jsx'
 import Rating from '../components/DescriptionRating.jsx'
 import Accordeon from "../components/Accordeon.jsx"
-import starFull from '../assets/img/starFull.png'
-import starEmpty from '../assets/img/starEmpty.png'
 import '../components/styles/Description.css'
 
 
@@ -37,12 +35,13 @@ function DescriptionPage() {
       </div>
       <div className="blocHost">
         <Host props={{name:datajson.host.name, picture:datajson.host.picture}}/>
-        <Rating rating={{value:TablRat.map((numbers, indexRat)=>
-                                          <span key={indexRat}>{datajson.rating>=numbers? 
-                                            <img src = {starFull} alt="etoile" className="Etoile" />
-                                            :
-                                            <img src = {starEmpty} alt="etoile" className="Etoile" />} 
-                                          </span>)}}/>       
+        <div className="divBlocRating">
+          {TablRat.map((rating,index)=>
+            <Rating props={{rating:datajson.rating, number:rating}}
+              key={index}
+              rating={rating} />)}
+        </div>
+      
       </div>    
     </div>      
     <div className="divAccordeon">
