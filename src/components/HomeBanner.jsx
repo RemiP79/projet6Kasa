@@ -5,7 +5,7 @@ import "./styles/homeBanner.css";
 function HomeBanner() {
     return (
         <div className="homeBanner" >
-            <img src={Image} alt="Image accueil" />            
+            <img src={Image} alt="accueil" />            
             <p className = "pHomeBanner">Chez vous, partout et ailleurs</p>
             
         </div>
