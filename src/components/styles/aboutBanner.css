@@ -1,32 +1,24 @@
-.aboutBanner{
-    /*border : 2px solid green;*/
+.aboutBanner{    
     height : 170px;
     margin-bottom : 50px;
     position : relative;    
-    margin : 0 6.5%;
-    
+    margin : 0 6.5%;    
 }
 
 .aboutBanner img{
-    /*border : 2px solid blue;*/
     height : 100%;
     width : 100%;
     object-fit: cover;
     border-radius : 40px;
     filter : brightness(70%);
-
 }
 
 @media all and (max-width: 600px) {
-
-    .aboutBanner{
-        /*border : 2px solid green;*/
+    .aboutBanner{        
         height : 300px;  
         height : auto;        
-        margin : 0 4%;
-        
+        margin : 0 4%;       
     }
-
     .aboutBanner img{             
         border-radius : 10px; 
     }

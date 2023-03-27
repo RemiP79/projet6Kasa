@@ -1,5 +1,3 @@
-
-
   .slide {
     width: 87%;   
     height: 400px;
@@ -23,16 +21,13 @@
     position: absolute;
     width: 20%;
     top : 0px;
-   height : 100%;
+    height : 100%;
     border: none;    
     z-index: 10px;
-    cursor: pointer;
-   
+    cursor: pointer;   
     opacity : 0.5;
-    font-size: 5em; 
-    
+    font-size: 5em;     
   }
-
 
   .btn:active {
     transform: scale(1);
@@ -50,20 +45,19 @@
 
   .btn img{
     width : 60px;
-   height : 60px;
-    
+   height : 60px;    
   }
 
   .arrowNext{
     position: relative;
-    right : 10%;
-   
+    right : 10%;   
   }
 
   .arrowPrev{
     position: relative;
     left : 10%;
   }
+  
   .decompteImg {
       position : absolute;
       bottom : 5%;

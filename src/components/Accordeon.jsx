@@ -8,8 +8,7 @@ function Accordeon({props}) {
     const [selected, setSelected]  = useState(false);
     const toggle = () => {
         setSelected(!selected)
-    }
-    
+    }    
     return (
         <div className="AccordeonItem">
             <div className="AccordeonTitle" onClick={() => toggle()}>

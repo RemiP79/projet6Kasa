@@ -1,14 +1,10 @@
-
-
-.iconeAccordeon{
-    font-size : 1.5em;
-}
 .AccordeonItem{
     background-color: rgb(255, 100, 100);
     margin-bottom: 10px;
     margin-top : 20px;
     border-radius : 10px;
 }
+
 .AccordeonTitle{
     display : flex;
     justify-content: space-between;
@@ -18,8 +14,11 @@
     font-size : 1.1em;
     font-weight :inherit;
     padding : 0 10px;
-    height : 35px;
-    
+    height : 35px;    
+}
+
+.iconeAccordeon{
+    font-size : 1.5em;
 }
 
 .accordeonContent {

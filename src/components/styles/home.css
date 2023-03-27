@@ -8,11 +8,9 @@
 }
 
 @media all and (max-width: 600px){
-    .divCardsContent{
-        
+    .divCardsContent{        
     margin: 30px 4%;
-    background-color:white;
-    
+    background-color:white;    
     padding : 0;
     }
 }

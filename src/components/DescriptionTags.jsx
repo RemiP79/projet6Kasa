@@ -1,5 +1,4 @@
 import React from "react";
-import './styles/slider.css';
 import "./styles/DescriptionTags.css"
 
 function Tags({tag}) {        

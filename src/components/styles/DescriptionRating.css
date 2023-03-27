@@ -1,15 +1,14 @@
-.divEtoile{
-   
-    width : 100%;
-    
-}
-
 .divBlocRating{
    margin-top : 10px;
    text-align:right;
 }
-
 .Etoile{ 
-    height : 25px;   
-    margin: 2%;
+    height : 1.6em;   
+    margin: 0 1%;
+}
+
+@media all and (max-width: 600px){
+    .divRating{
+         display : flex;
+    }
 }

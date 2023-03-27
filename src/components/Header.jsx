@@ -8,9 +8,15 @@ function Banner() {
     return (<header id="header">
         <img id="logoKasaRouge" src={Logo} alt="Logo Kasa" />
             <nav className="navbar"> {/* */} 
-                <NavLink className={({ isActive }) => isActive ? "nav-active nav-link" : "nav-link" } end="/" to="/" >Accueil 
+                <NavLink className={({isActive}) => 
+                                isActive ? "nav-active nav-link" 
+                                :
+                                "nav-link" } end="/" to="/" >Accueil 
                 </NavLink> 
-                <NavLink className={({ isActive }) => isActive ? "nav-active nav-link" : "nav-link" } end="about" to="/about" > A Propos
+                <NavLink className={({isActive}) =>
+                                isActive ? "nav-active nav-link" 
+                                :
+                                "nav-link"} end="about" to="/about"> A Propos
                 </NavLink> 
             </nav>
     </header>

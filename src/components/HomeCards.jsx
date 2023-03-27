@@ -8,10 +8,8 @@ function HomeCards({card}) {
     
     return (  
         <div className="cardsContent">       
-            <Link to= {'description/' + card.id}> 
-                <div className="cards">
-                                <img src={card.cover} alt={card.title} className ="cardsImg"/>                        
-                </div>  
+            <Link to= {`description/${card.id}`}>                 
+                <img src={card.cover} alt={card.title} className ="cardsImg"/>
                 <p className="cardsTitle" >{card.title}</p> 
             </Link> 
         </div>        

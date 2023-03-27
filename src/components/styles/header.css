@@ -22,7 +22,8 @@
     font-size :130%;
     font-family : "arial";
 }
-.navbar{
+
+.navbar{    
     width : 50%;
     text-align: right;
 }
@@ -33,30 +34,30 @@
     justify-content: right;
     margin : 0;
     padding:0; 
-    width : 100%;
-    
-   
+    width : 100%;   
 }
 
 
 @media all and (max-width: 600px) {
     #header {
-        margin : 20px 4% 35px;
+        margin : 20px 35px;
     }
-
+    .navbar{
+        width : 60%;
+        display:flex;
+    }
+    
     #logoKasaRouge {    
     width : 25%;
     min-width:auto;   
     }
-
 
     .nav-link{    
     width : 50%;    
     cursor : "pointer";
     font-size :100%;
     font-family : "arial";
-}
-
+    }
 }
 
 

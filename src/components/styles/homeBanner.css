@@ -1,30 +1,24 @@
 .homeBanner{
-    /*border : 2px solid green;*/
     height : 170px;
     margin-bottom : 50px;
     position : relative;    
-    margin : 0 6.5%;
-    
+    margin : 0 6.5%; 
+      
 }
 
-.homeBanner img{
-    /*border : 2px solid blue;*/
+.homeBanner img{    
     height : 100%;
     width : 100%;
     object-fit: cover;
     border-radius : 40px;
     filter : brightness(70%);
-
 }
-
-
 
 .homeBanner p{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    /*border : 2px solid pink;*/
+    transform: translate(-50%,-50%);   
     font-family : arial;
     color : white;
     font-size : 2rem;
@@ -32,7 +26,6 @@
 }
 
 @media all and (max-width: 600px) {
-
     .homeBanner{           
         margin : 0 4%;
         height : 100px;
