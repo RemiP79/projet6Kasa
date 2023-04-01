@@ -13,10 +13,16 @@ function Accordeon({props}) {
         <div className="AccordeonItem">
             <div className="AccordeonTitle" onClick={() => toggle()}>
                 <p >{props.title}</p>
-                <span className="iconeAccordeon">{selected? <img src={FlecheFermeture} alt="Fermer"/> : <img src={FlecheOuverture} alt="Ouvrir"/>}</span>
+                <span className="iconeAccordeon">{selected?
+                    <img src={FlecheFermeture} alt="Fermer"/> 
+                    : 
+                    <img src={FlecheOuverture} alt="Ouvrir"/>}
+                </span>
             </div>
-            <div className={selected? 'accordeonContent show' : 
-            'accordeonContent'}>{props.content}
+            <div className={selected?
+                'accordeonContent show'
+                 : 
+                'accordeonContent'}>{props.content}
             </div> 
         </div>
     )
