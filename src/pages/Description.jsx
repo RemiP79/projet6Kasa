@@ -12,7 +12,6 @@ import Accordeon from "../components/Accordeon.jsx"
 import '../components/styles/Description.css'
 
 
-
 function DescriptionPage() {
   const { id } = useParams();   
   const TablRat=[1,2,3,4,5];  
